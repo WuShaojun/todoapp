@@ -36,6 +36,7 @@ import com.example.android.architecture.blueprints.todoapp.util.EspressoIdlingRe
 
 public class TasksActivity extends AppCompatActivity {
 
+
     private static final String CURRENT_FILTERING_KEY = "CURRENT_FILTERING_KEY";
 
     private DrawerLayout mDrawerLayout;
@@ -46,6 +47,8 @@ public class TasksActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tasks_act);
+
+        System.out.println("savedInstanceState = " + savedInstanceState);
 
         // Set up the toolbar.
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
